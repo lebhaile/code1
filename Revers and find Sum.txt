@@ -1,0 +1,31 @@
+v. Reverse a number and find sum of digits of a number.
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int num,rev,sum;
+            sum = 0;
+            Console.WriteLine("Enter number=");
+            num = Convert.ToInt32(Console.ReadLine());
+
+            while (num > 0)
+            {
+                rev = num % 10;
+                Console.WriteLine(rev);
+                sum = sum + rev;
+                num = num / 10;
+            }
+            Console.WriteLine("Sum of digit=" + sum);
+                                  
+           Console.ReadLine();
+           }
+    }
+}

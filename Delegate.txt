@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        delegate int ProcessDelegate(int param1, int param2);
+        static int Multiply(int param1, int param2)
+        {
+            return param1 * param2;
+        }
+
+        static int Divide(int param1, int param2)
+        {
+            return param1 / param2;
+        }
+        static void Main(string[] args)
+        {
+            ProcessDelegate process1 = new ProcessDelegate(Multiply);
+            ProcessDelegate process2 = new ProcessDelegate(Divide);
+            int r1 = process1(8,2);
+            int r2 = process2(8,2);
+            Console.WriteLine("Result="+r1);
+            Console.WriteLine("Result=" + r2);
+            Console.ReadKey();
+
+        }
+    }
+}

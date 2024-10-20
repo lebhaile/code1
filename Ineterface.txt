@@ -1,0 +1,37 @@
+Ans: - (Interfaces Program)
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    
+       interface abc
+    {
+         void sum();
+         void mul();
+    }
+
+
+    class Program :abc
+       
+    {
+        public void sum()
+        {
+            Console.WriteLine("This is first interface program");
+        }
+        public void mul()
+        {
+            Console.WriteLine("This is my second line ");
+        }
+        static void Main(string[] args)
+        {
+
+            Program ob1 = new Program();
+            ob1.sum();
+            ob1.mul();
+            Console.ReadLine();
+        }
+    }
+}

@@ -1,0 +1,39 @@
+Ans:- (Operator Overloading)
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    public class sample1
+    {
+        public int i;
+        public sample1(int j)
+        {
+            i = j;
+        }
+        public static sample1 operator +(sample1 x, sample1 y)
+        {
+            Console.WriteLine("Operator =" + x.i + "  " + y.i);
+            sample1 z = new sample1(x.i + y.i);
+            return z;
+        }
+    }
+
+
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            sample1 a = new sample1(10);
+            sample1 b = new sample1(5);
+            sample1 c;
+            c = a + b;
+            Console.WriteLine(c.i);
+
+            Console.ReadLine();
+        }
+    }
+}

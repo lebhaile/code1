@@ -1,0 +1,33 @@
+b)  If you have two integers stored in variables var1 and var2, what Boolean test can
+you perform to see if one or the other (but not both) is greater than 10?
+
+
+	
+Ans:-
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int num1, num2;
+            num1=20; num2=5;
+            Console.WriteLine("Enter 2integer value =");
+
+            if (num1 > 10 && num2 < 10)
+            {
+                Console.WriteLine("Number 1 is greater then 10");
+            }
+            else
+            {
+                Console.WriteLine("Number 2 is less then 10");
+            }
+            Console.ReadLine();
+        }
+    }
+}

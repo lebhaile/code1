@@ -1,0 +1,31 @@
+a)  Write a console application that obtains four int values from the user and displays
+the product. Hint: you may recall that the Convert.ToDouble() command was used
+to convert the input from the console to a double; the equivalent command to
+convert from a string to an int is Convert.ToInt32().
+
+Ans :- 
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+  		  class Program
+    		{
+      	  static void Main(string[] args)
+        		{
+         		   int num1, num2, num3, num4, product;
+           		 Console.WriteLine("Enter 4 integer value =");
+          	 	 num1 = Convert.ToInt32(Console.ReadLine());
+            	 num2 = Convert.ToInt32(Console.ReadLine());
+          		  num3 = Convert.ToInt32(Console.ReadLine());
+           		 num4 = Convert.ToInt32(Console.ReadLine());
+
+           		 product = (num1 * num2 * num3 * num4);
+Console.WriteLine("Product of four integer number=" + product);
+          		  Console.ReadLine();
+       		 }
+    		}
+}

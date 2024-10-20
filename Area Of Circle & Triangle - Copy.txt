@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication4
+{
+    class Program
+    {
+        public void triangle()
+        {
+            int a, b,c, area;
+            Console.WriteLine("Length Of First Side=");
+            a= Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Length Of Second Side=");
+            b= Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Length Of Third Side=");
+            c = Convert.ToInt32(Console.ReadLine());
+            area = (a+b+c) / 2;
+            Console.WriteLine("Area Of Triangle=" + area);
+         }
+        public void circle()
+        {
+            int Radius; double area;
+            Console.WriteLine("Enter The Radius");
+            Radius = Convert.ToInt32(Console.ReadLine());
+            area = 3.14 * Radius * Radius;
+            Console.WriteLine("Area Of Circle="+area);
+        }
+       public static void Main(string[]args)
+        {
+
+            Program demo = new Program();
+            demo.triangle();
+            demo.circle();
+            Console.ReadKey();
+
+
+        }
+
+    }
+}

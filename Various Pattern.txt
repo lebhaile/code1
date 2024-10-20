@@ -1,0 +1,104 @@
+ii. Generate various patterns (triangles, diamond and other patterns) with
+numbers.
+(a).
+Ans:-
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int i,j,k,c=1,m;
+            for(i=1;i<=5;i++)
+            { for(k=1;k<=5-i;k++)
+                { 
+                Console.Write(" ");
+                }
+                for(j=1;j<=i;j++)
+                {
+                   Console.Write (j);
+                }
+                for(m=j-2;m>=1;m--)
+                    {
+                    Console.Write (m);
+                    }
+                   Console.WriteLine();
+
+            }
+
+           Console.ReadLine();
+
+        }
+    }
+}
+
+(b)
+Ans:-
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int i,j,k,c=1,m;
+            for(i=1;i<=5;i++)
+            { for(k=1;k<=5-i;k++)
+                { 
+                Console.Write(" ");
+                }
+                for(j=1;j<=i;j++)
+                {
+                   Console.Write (j);
+                }
+                for(m=j-2;m>=1;m--)
+                    {
+                    Console.Write (m);
+                    }
+                   Console.WriteLine();
+
+            }
+
+           Console.ReadLine();
+
+        }
+    }
+}
+
+(c)
+Ans:-
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int i,j;
+        for(i=1;i<=5;i++)
+        {
+            for(j=1;j<=i ;j++)
+                {
+                 Console.Write(j);
+                }
+            Console.WriteLine();
+        }
+
+           Console.ReadLine();
+
+        }
+    }
+}

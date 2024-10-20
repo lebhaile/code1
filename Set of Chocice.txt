@@ -1,0 +1,35 @@
+
+import javax.swing.event.*;
+import javax.swing.*;
+import java.awt.*;
+
+class Demo extends JFrame implements ListSelectionListener
+{
+JList l;
+JLabel jl;
+    private Object j1;
+public Demo()
+{
+ Container cp =getContentPane();
+ cp.setLayout(new FlowLayout());
+ String n[]={"pen","pencil","book","Eraser"};
+ l=new JList(n);
+ JLabel j1 = new JLabel();
+ cp.add(l);
+ cp.add(j1);
+ l.addListSelectionListener(this);
+ pack();
+ setVisible(true);
+ }
+public void valueChanged(ListSelectionEvent le, String[] p)
+{
+j1.setText("The price is"+p[l.getSelectedIndex()]);
+}
+public static void main (String args[])
+{
+Demo td=new Demo();
+}
+    
+
+
+}

@@ -1,0 +1,46 @@
+b. Program with different features of C#
+Ans:- (Function Overloading)
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+       
+        private void getdata(int a)
+        {
+
+            int z;
+            z = a * a;
+            Console.WriteLine("Square value of a=" + z);
+        }
+
+        private void getdata(int a, int b)
+        {
+            int z;
+            z = a + b;
+            Console.WriteLine("Sum of two number=" + z);
+        }
+
+        public static void Main()
+        {
+
+            int a, b;
+            Console.WriteLine("Enter no=");
+            a = Convert.ToInt32(Console.ReadLine());
+            b = Convert.ToInt32(Console.ReadLine());
+
+            Program obj1 = new Program();
+
+            obj1.getdata(a);
+            obj1.getdata(a,b);
+
+            Console.ReadLine();
+        }
+         
+    }
+}
+

@@ -1,0 +1,20 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string str = args[0];
+            int n = Int32.Parse(args[1]);
+            Console.WriteLine("argument 1 string=" + str);
+            Console.WriteLine("argument 2 int=" + n);
+            Console.ReadKey();
+        }
+
+    }
+}

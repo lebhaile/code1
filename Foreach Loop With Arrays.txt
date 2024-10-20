@@ -1,0 +1,24 @@
+vii. Use of foreach loop with arrays.
+Ans:-
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int[] array1 = new int[] { 1, 2, 3, 4, 5 };
+            foreach (int i in array1)
+            {
+                Console.WriteLine("Value is {0}", i);
+            }
+                                  
+           Console.ReadLine();
+           }
+    }
+}

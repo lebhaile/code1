@@ -1,0 +1,43 @@
+a. Program using classes.
+Ans:-
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        private string name, dept;
+       public  int age;
+       
+
+        private void getdata()
+        {
+            Console.WriteLine("Enter the student's name, age ");
+            name = Console.ReadLine();
+            
+           age = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter the student department");
+            dept = Console.ReadLine();
+        }
+
+        private void putdata()
+        {
+            Console.WriteLine("Student Details");
+            Console.WriteLine("Name=" + name + "\n age=" + age + "\n dept=" + dept);
+        }
+
+        public static void Main()
+        {
+
+            Program obj1 = new Program();
+            obj1.getdata();
+            obj1.putdata();
+
+            Console.ReadLine();
+        }
+         
+    }
+}

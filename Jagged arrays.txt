@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication4
+{
+    class Program
+    {
+       public static void Main(string[]args)
+        {
+            int[][] a = new int[3][];
+            a[0] = new int[5];
+            a[1] = new int[2];
+            a[2] = new int[4];
+            int i, j;
+            for (i = 0; i < a.Length; i++)
+            {
+                for (j = 0; j < a[i].Length; j++)
+                {
+                    Console.WriteLine((a[i][j] + i + j) + "");
+                }
+                Console.ReadLine();
+            }
+
+        }
+
+    }
+}

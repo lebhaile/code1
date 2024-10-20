@@ -1,0 +1,43 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication3
+{
+    class a
+    {
+        public void display()
+        {
+            Console.WriteLine("hahahaha");
+        }
+        class b : a
+        {
+            public void display1()
+            {
+                System.Console.WriteLine("hihihihi");
+            }
+            class c : b
+            {
+                public void display2()
+                {
+                    System.Console.WriteLine("Hohoho");
+                }
+
+                class d
+                {
+                    public static void Main(string[] args)
+                    {
+                        c obj = new c();
+                        obj.display();
+                        obj.display1();
+                        obj.display2();
+                        Console.ReadKey();
+
+                    }
+                }
+
+            }
+        }
+    }
+}

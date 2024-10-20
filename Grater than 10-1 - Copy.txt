@@ -1,0 +1,37 @@
+c)   Write an application that includes the logic from Exercise 1, obtains two numbers
+from the user, and displays them, but rejects any input where both numbers are
+greater than 10 and asks for two new numbers.
+
+Ans:-
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int num1, num2;
+            
+            Console.WriteLine("Enter 2integer value =");
+            num1 = Convert.ToInt32(Console.ReadLine());
+            num2 = Convert.ToInt32(Console.ReadLine());
+
+
+            if (num1 <=10 && num2 <= 10)
+            {
+                Console.WriteLine("First No =" +num1 );
+                Console.WriteLine("Second No=" + num2);
+ 
+            }
+            else
+            {
+                Console.WriteLine("Enter two number which is less then 10");
+            }
+            Console.ReadLine();
+        }
+    }
+}
